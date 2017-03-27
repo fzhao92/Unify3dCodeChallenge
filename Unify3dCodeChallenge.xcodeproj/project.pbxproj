@@ -12,6 +12,8 @@
 		3F41EF2A1E88731300DF123D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41EF281E88731300DF123D /* Main.storyboard */; };
 		3F41EF2C1E88731300DF123D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F41EF2B1E88731300DF123D /* Assets.xcassets */; };
 		3F41EF2F1E88731300DF123D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41EF2D1E88731300DF123D /* LaunchScreen.storyboard */; };
+		3FAF02031E8888DC00C345E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF02021E8888DC00C345E3 /* LoginViewController.swift */; };
+		B4A39727A5606BDE345DDE56 /* Pods_Unify3dCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6913E888DBDDB3B696E368E /* Pods_Unify3dCodeChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,11 @@
 		3F41EF2B1E88731300DF123D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F41EF2E1E88731300DF123D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F41EF301E88731300DF123D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAF02021E8888DC00C345E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FAF02041E8889C200C345E3 /* Unify3dCodeChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Unify3dCodeChallenge.entitlements; sourceTree = "<group>"; };
+		97BC3E9365126D2858D6AC85 /* Pods-Unify3dCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unify3dCodeChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Unify3dCodeChallenge/Pods-Unify3dCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		A9FA89B6FDD55766C63F409C /* Pods-Unify3dCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unify3dCodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Unify3dCodeChallenge/Pods-Unify3dCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		D6913E888DBDDB3B696E368E /* Pods_Unify3dCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unify3dCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A39727A5606BDE345DDE56 /* Pods_Unify3dCodeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C8277F12A371063487C3292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6913E888DBDDB3B696E368E /* Pods_Unify3dCodeChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F41EF181E88731300DF123D = {
 			isa = PBXGroup;
 			children = (
 				3F41EF231E88731300DF123D /* Unify3dCodeChallenge */,
 				3F41EF221E88731300DF123D /* Products */,
+				6BA9C35C79A449C4F70FFBF5 /* Pods */,
+				0C8277F12A371063487C3292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +72,9 @@
 		3F41EF231E88731300DF123D /* Unify3dCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				3FAF02041E8889C200C345E3 /* Unify3dCodeChallenge.entitlements */,
 				3F41EF241E88731300DF123D /* AppDelegate.swift */,
+				3FAF02021E8888DC00C345E3 /* LoginViewController.swift */,
 				3F41EF261E88731300DF123D /* ViewController.swift */,
 				3F41EF281E88731300DF123D /* Main.storyboard */,
 				3F41EF2B1E88731300DF123D /* Assets.xcassets */,
@@ -64,6 +84,15 @@
 			path = Unify3dCodeChallenge;
 			sourceTree = "<group>";
 		};
+		6BA9C35C79A449C4F70FFBF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97BC3E9365126D2858D6AC85 /* Pods-Unify3dCodeChallenge.debug.xcconfig */,
+				A9FA89B6FDD55766C63F409C /* Pods-Unify3dCodeChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F41EF331E88731300DF123D /* Build configuration list for PBXNativeTarget "Unify3dCodeChallenge" */;
 			buildPhases = (
+				E08FD7492906630E19DD86D2 /* [CP] Check Pods Manifest.lock */,
 				3F41EF1D1E88731300DF123D /* Sources */,
 				3F41EF1E1E88731300DF123D /* Frameworks */,
 				3F41EF1F1E88731300DF123D /* Resources */,
+				0316BC76FE16213DFD48BEC9 /* [CP] Embed Pods Frameworks */,
+				AF95623F71963E234B683C61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +130,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = H2562XJSGY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -132,11 +169,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0316BC76FE16213DFD48BEC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Unify3dCodeChallenge/Pods-Unify3dCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF95623F71963E234B683C61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Unify3dCodeChallenge/Pods-Unify3dCodeChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08FD7492906630E19DD86D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F41EF1D1E88731300DF123D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAF02031E8888DC00C345E3 /* LoginViewController.swift in Sources */,
 				3F41EF271E88731300DF123D /* ViewController.swift in Sources */,
 				3F41EF251E88731300DF123D /* AppDelegate.swift in Sources */,
 			);
@@ -259,8 +345,10 @@
 		};
 		3F41EF341E88731300DF123D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BC3E9365126D2858D6AC85 /* Pods-Unify3dCodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Unify3dCodeChallenge/Unify3dCodeChallenge.entitlements;
 				DEVELOPMENT_TEAM = H2562XJSGY;
 				INFOPLIST_FILE = Unify3dCodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -272,8 +360,10 @@
 		};
 		3F41EF351E88731300DF123D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FA89B6FDD55766C63F409C /* Pods-Unify3dCodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Unify3dCodeChallenge/Unify3dCodeChallenge.entitlements;
 				DEVELOPMENT_TEAM = H2562XJSGY;
 				INFOPLIST_FILE = Unify3dCodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,6 +392,7 @@
 				3F41EF351E88731300DF123D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

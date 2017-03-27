@@ -1,0 +1,15 @@
+PODS:
+  - KeychainSwift (7.0.0)
+  - RNCryptor (5.0.1)
+
+DEPENDENCIES:
+  - KeychainSwift (~> 7.0)
+  - RNCryptor (~> 5.0)
+
+SPEC CHECKSUMS:
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
+  RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
+
+PODFILE CHECKSUM: 9e81cdebad33f766e2921e3d474584936721a527
+
+COCOAPODS: 1.2.0.beta.1
