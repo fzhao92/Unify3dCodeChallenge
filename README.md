@@ -1,7 +1,5 @@
 # Unify3dCodeChallenge
 
-# Unify3dCodeChallenge
-
 ## Installation
 run pod install in terminal: will install KeychainSwift and RNCryptor pods used
 by project
